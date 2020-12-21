@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+:root{
+  --primary-color:#fe6d6f;
+  --font-family:monospace;
+}
+
+html {
+  font-size: 12px;
+  font-weight: 600px;
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+  outline: none;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+/* HEADER */
+.bg_nav {
+  background-color: #141a20 !important;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.logo {
+  font-size: 2.2rem !important;
+  font-weight: bolder !important;
+  color: #ffffff !important;
+  letter-spacing: 5px;
+}
+.logo .dot {
+  letter-spacing: 2px !important;
+  color: var(--primary-color);
+}
+
+.navbar li a {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #575757 !important;
+  /* padding: 0 7px !important; */
+  margin: 0 7px ;
+  transition: .5s;
+}
+
+.navbar li:hover a {
+  color: var(--primary-color) !important;
+}
+
+.navbar li.active a {
+  color: var(--primary-color) !important;
+  border-bottom: 1px solid #ffffff !important;
+}
+
+/* HOME */
+#home {
+  width: 100%;
+  height: 80vh;
+  margin-top: 12px;
+}
+
+#home h1 {
+  margin: 0 0 25px 0;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #141a20;
+}
+
+#home h2{
+  margin: 20px 0 45px 0;
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #141a20;
+}
+
+.btn-get-started {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  text-decoration: none;
+  color:var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.btn-get-started:hover {
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  transition: 1s;
+}
+
+.home-img {
+  text-align: left;
+}
+
+.image {
+  width: 100%;
+  height: 55vh;
+}
+
+.sec-heading{
+  font-family: var(--font-family);
+  margin: 80px 0 10px 0;
+  font-weight: bolder;
+}
+
+/* SKILLS */
+.sec-skills i {
+  font-size: 6.5rem;
+}
+.sec-skills .my-skills, .card{
+  border: 1px solid #f8f5ed;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.card{
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+.card-title{
+  font-size: 1.3rem;
+  font-weight: bolder !important;
+}
+
+.d_card{
+  height: 350px; 
+}
+
+.d_card:hover{
+  transform: scale(1.05);
+}
+
+.d_card img{
+  width: 100%;
+  height: 65%;
+  object-fit: contain;
+}
+/* PROJECTS   */
+.button a{
+  padding: 10px;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+.button a:hover{
+  transform: scale(1.05);
+  opacity: .9;
+}
+
+.button i{
+  font-size: 1.9rem;
+  color: #fff;
+}
+
+.button .github{
+  background-color: #313131;
+}
+
+.button .live{
+  background-color: #96c15a;
+}
+/* ACHIEVMENTS */
+
+/* CONTACT */
+.contact-text{
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.contact-icon{
+  font-size: 2.1rem;
+  color: var(--primary-color);
+}
+
+.social-media{
+  font-size: 1.9rem;
+  padding: 0 3px;
+}
+/* FOOTER */
+.footer {
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: #141a20;
+  color: #575757
+}
+.footer span{
+  color: var(--primary-color);
+  font-weight: bolder;
+}
+
+
+@media (max-width:991px){
+  .logo{
+    font-size: 1.5rem !important;
+  }
+  .home-img{
+    text-align: center;
+  }
+  h1{
+    font-size: 2.2rem;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+
+  .d_card{
+    height: 250px; 
+  }
+  .d_card img{
+    height: 55%; 
+  }
+} 
